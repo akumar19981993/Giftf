@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>डॉ. प्रसाद - डिजिटल डिस्ट्रीब्यूटर पोर्टल</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f7f9fa;
+            padding: 50px 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 380px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.06);
+        }
+        h2 { color: #212121; font-size: 22px; margin-bottom: 5px; }
+        .product-title { font-size: 14px; color: #666; margin-bottom: 20px; }
+        .price-box {
+            font-size: 28px;
+            font-weight: bold;
+            color: #111;
+            background: #fff9e6;
+            padding: 12px;
+            border-radius: 8px;
+            display: inline-block;
+            border: 1px dashed #ff9900;
+            margin-bottom: 25px;
+        }
+        .btn-action {
+            display: block;
+            background: #2874f0; /* फ्लिपकार्ट ब्लू कलर थीम */
+            color: white;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(40, 116, 240, 0.3);
+            transition: 0.2s;
+        }
+        .btn-action:hover {
+            background: #145cc7;
+        }
+        .loading-text {
+            display: none;
+            margin-top: 20px;
+            color: #2e7d32;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>डॉ. प्रसाद सिस्टम</h2>
+    <div class="product-title">Adobe Creative Cloud Pro (1 Year)</div>
+    
+    <div class="price-box">निश्चित शुल्क: ₹6,741</div>
+
+    <!-- यह बटन मरीज को सीधे बिना किसी रुकावट के आपके फ्लिपकार्ट लिंक पर ले जाएगा -->
+    <a href="https://dl.flipkart.com/s/Qe_8PnNNNN" class="btn-action" onclick="startRedirect()">
+        भुगतान करें (पिन दर्ज करें)
+    </a>
+
+    <div class="loading-text" id="statusMessage">
+        🔄 सिस्टम एक्टिवेट हो रहा है... आपके पिन कन्फर्म करते ही वाउचर ट्रांसफर हो जाएगा।
+    </div>
+</div>
+
+<script>
+    function startRedirect() {
+        // जैसे ही मरीज बटन दबाएगा, नीचे ऑटो-सिस्टम का स्टेटस ऑन हो जाएगा
+        document.getElementById("statusMessage").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
